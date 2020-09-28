@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:background="#FFEB3B"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:textSize="40sp"
+        android:background="#0F0"
+        android:inputType="number"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/seek"
+        android:max="30"
+        android:min="0"
+        android:progress="5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:id="@+id/price"
+        android:background="#FFEB3B"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:id="@+id/add"
+        android:background="#FFEB3B"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:id="@+id/total"
+        android:background="#FFEB3B"/>
+
+</LinearLayout>
