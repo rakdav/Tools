@@ -161,6 +161,11 @@ public class MainActivity extends AppCompatActivity {
              case R.id.drawLine:
                  intent=new Intent(MainActivity.this,DrawActivity.class);
                  startActivity(intent);
+                 return true;
+             case R.id.drawCircle:
+                 intent=new Intent(MainActivity.this,CellAnimateActivity.class);
+                 startActivity(intent);
+                 return true;
          }
         return super.onOptionsItemSelected(item);
     }

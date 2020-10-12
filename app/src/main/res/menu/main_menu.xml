@@ -15,7 +15,7 @@
             <item android:id="@+id/drawLine"
                 android:title="DrawLine"/>
             <item android:id="@+id/drawCircle"
-                android:title="DrawCircle"/>
+                android:title="DrawRabit"/>
         </menu>
     </item>
 </menu>
