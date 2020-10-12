@@ -1,5 +1,6 @@
 package com.example.tools;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -83,23 +86,23 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        buttonDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,DateActivity.class);
-//                startActivity(intent);
-                intent.putExtra(MESSAGE_PRICE,total.getText().toString());
-                startActivityForResult(intent,REQUEST_DATE);
-            }
-        });
-        buttonTime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,TimeActivity.class);
-                intent.putExtra(MESSAGE_PRICE,total.getText().toString());
-                startActivityForResult(intent,REQUEST_TIME);
-            }
-        });
+//        buttonDate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(MainActivity.this,DateActivity.class);
+////                startActivity(intent);
+//                intent.putExtra(MESSAGE_PRICE,total.getText().toString());
+//                startActivityForResult(intent,REQUEST_DATE);
+//            }
+//        });
+//        buttonTime.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(MainActivity.this,TimeActivity.class);
+//                intent.putExtra(MESSAGE_PRICE,total.getText().toString());
+//                startActivityForResult(intent,REQUEST_TIME);
+//            }
+//        });
     }
     private void GetCalculate()
     {
@@ -132,5 +135,30 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         resDate.setText(resD+" "+resTime);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent;
+         switch (item.getItemId())
+         {
+             case R.id.date:
+                 intent=new Intent(MainActivity.this,DateActivity.class);
+                 intent.putExtra(MESSAGE_PRICE,total.getText().toString());
+                 startActivityForResult(intent,REQUEST_DATE);
+                 return true;
+             case R.id.time:
+                 intent=new Intent(MainActivity.this,TimeActivity.class);
+                 intent.putExtra(MESSAGE_PRICE,total.getText().toString());
+                 startActivityForResult(intent,REQUEST_TIME);
+                 return true;
+         }
+        return super.onOptionsItemSelected(item);
     }
 }

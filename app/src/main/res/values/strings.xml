@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Калькулятор бармена</string>
+    <string name="setDate">Установить дату</string>
+    <string name="setTime">Установить время</string>
 </resources>

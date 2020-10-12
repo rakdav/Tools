@@ -15,16 +15,16 @@
         style="@style/TextViewStyle"
         android:id="@+id/resDate"
         />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/date"
-            android:src="@mipmap/ic_launcher"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/time"
-            android:src="@mipmap/ic_launcher_round"/>
+<!--        <ImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/date"-->
+<!--            android:src="@mipmap/ic_launcher"/>-->
+<!--        <ImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/time"-->
+<!--            android:src="@mipmap/ic_launcher_round"/>-->
     </LinearLayout>
     <EditText
         android:layout_width="match_parent"
