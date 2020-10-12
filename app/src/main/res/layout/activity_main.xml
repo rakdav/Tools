@@ -11,10 +11,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_weight="1"
+        style="@style/TextViewStyle"
         android:id="@+id/resDate"
         />
         <ImageButton
@@ -43,23 +41,15 @@
         android:min="0"
         android:progress="5"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
         android:id="@+id/price"
-        android:background="#FFEB3B"/>
+        style="@style/TextViewStyle" />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
+        style="@style/TextViewStyle"
         android:id="@+id/add"
-        android:background="#FFEB3B"/>
+/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:id="@+id/total"
-        android:background="#FFEB3B"/>
+        style="@style/TextViewStyle"
+        android:id="@+id/total" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
