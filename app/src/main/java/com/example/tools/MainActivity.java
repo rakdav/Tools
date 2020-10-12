@@ -158,6 +158,9 @@ public class MainActivity extends AppCompatActivity {
                  intent.putExtra(MESSAGE_PRICE,total.getText().toString());
                  startActivityForResult(intent,REQUEST_TIME);
                  return true;
+             case R.id.drawLine:
+                 intent=new Intent(MainActivity.this,DrawActivity.class);
+                 startActivity(intent);
          }
         return super.onOptionsItemSelected(item);
     }

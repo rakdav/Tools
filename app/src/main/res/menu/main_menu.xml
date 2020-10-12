@@ -8,4 +8,14 @@
         android:id="@+id/time"
         android:orderInCategory="1"
         android:title="@string/setTime"/>
+    <item android:id="@+id/close"
+        android:orderInCategory="1"
+        android:title="Draw">
+        <menu>
+            <item android:id="@+id/drawLine"
+                android:title="DrawLine"/>
+            <item android:id="@+id/drawCircle"
+                android:title="DrawCircle"/>
+        </menu>
+    </item>
 </menu>
